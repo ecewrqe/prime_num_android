@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">素数の検証</string>
+    <string name="action_settings">設定</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">素数表</string>
+    <string name="second_fragment_label">素数判定</string>
+    <string name="next">次</string>
+    <string name="previous">前</string>
+    <string name="min_num_label">最小数</string>
+    <string name="hint">入力...</string>
+    <string name="max_num_label">最大数</string>
+    <string name="tableOkButton">確定</string>
+    <string name="prime_check">素数？</string>
+    <string name="happy_check">ハッピー？</string>
+    <string name="table_title">素数表</string>
+    <string name="toJudgePageButton">素数判定</string>
+    <string name="judge_label">素数判定</string>
+    <string name="judge">確定</string>
+    <string name="toPrimeTable">素数表へ</string>
+</resources>

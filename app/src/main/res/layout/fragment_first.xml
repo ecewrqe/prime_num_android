@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical"
+        android:id="@+id/fragment_first_layout">
+        <TextView
+            android:id="@+id/min_num_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/min_num_label"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/min_num_edit"
+            android:inputType="text"
+            android:hint="@string/hint"
+            android:autofillHints="@string/hint"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_bottom_border"
+            android:text="7"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:id="@+id/max_num_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/max_num_label"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/max_num_edit"
+            android:inputType="text"
+            android:hint="@string/hint"
+            android:autofillHints="@string/hint"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_bottom_border"
+            android:text="200"
+            android:textSize="20sp"
+            />
+        <!--素数とハッピーオプション-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/happy_check"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/happy_check"
+                />
+            <CheckBox
+                android:id="@+id/prime_check"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/prime_check"
+                />
+            <Button
+                android:id="@+id/toJudgePage"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/toJudgePageButton" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/tableOkButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tableOkButton" />
+        <!--素数表-->
+
+        <TextView
+            android:id="@+id/tableMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""/>
+        <TextView
+            android:id="@+id/table_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/table_title"
+            android:background="@drawable/table_border"
+            android:textSize="20sp"
+            android:textAlignment="center" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffff"
+            >
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableLayout
+                    android:id="@+id/prime_table"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                </TableLayout>
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="fill_parent"-->
+<!--                    android:id="@+id/primeTableRLayout"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:orientation="vertical">-->
+<!--                    -->
+<!--                </RelativeLayout>-->
+
+
+            </HorizontalScrollView>
+
+        </ScrollView>
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
